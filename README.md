@@ -1,4 +1,4 @@
-# golang-learning-step-by-step
+# Golang learning step by step
 ![Golang logo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/322px-Go_Logo_Blue.svg.png)
 ![](https://img.shields.io/badge/Go-1.18-blue.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg) 
