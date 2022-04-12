@@ -18,4 +18,8 @@ func main() {
 	var a, b int = 2, 4
 	fmt.Printf("The value of a is: %d\n", a)
 	fmt.Printf("The value of b is: %d\n", b)
+
+	// Important notes
+	// You can't use := out of funcs. 
+	// It's because, out of any func, a statement should start with a keyword.
 }
