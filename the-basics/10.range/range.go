@@ -12,14 +12,14 @@ func main() {
 	for _, number := range numbers {
 		sum += number
 	}
-	fmt.Println(sum)  // => 15
+	fmt.Println(sum) // => 15
 
-	// Above we didn’t need the index, so we ignored it with the blank identifier _. 
+	// Above we didn’t need the index, so we ignored it with the blank identifier _.
 	// Sometimes we actually want the indexes though.
 
 	for index, value := range numbers {
 		if value == 4 {
-			fmt.Println("The index of 4 is:", index)  // => The index of 4 is: 3
+			fmt.Println("The index of 4 is:", index) // => The index of 4 is: 3
 		}
 	}
 

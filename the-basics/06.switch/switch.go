@@ -18,11 +18,11 @@ func main() {
 	x := -1
 
 	switch {
-	case x % 2 == 0:
+	case x%2 == 0:
 		fmt.Println("Even number")
-	case x % 2 == 1:
+	case x%2 == 1:
 		fmt.Println("Odd number")
 	default:
-		fmt.Println("Humm 🤔")		
+		fmt.Println("Humm 🤔")
 	}
 }

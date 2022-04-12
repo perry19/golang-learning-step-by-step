@@ -10,7 +10,7 @@ func main() {
 		fmt.Println("You ain't an adult yet")
 	} else if age >= 18 {
 		fmt.Println("You are an adult")
-	} else{
+	} else {
 		fmt.Println("We are confused, your age is surely negative :)")
 	}
 }
