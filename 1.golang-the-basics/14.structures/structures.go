@@ -18,10 +18,10 @@ func main() {
 	// We are creating a new Animal (dog) with name bobby and age 3
 
 	dog := Animal{name: "Bobby", age: 3}
-	fmt.Println(dog)  // => {Bobby 3}
+	fmt.Println(dog) // => {Bobby 3}
 
 	// To get a specific value like the age we can use the dot (.)
-	fmt.Println("Bobby is:", dog.age, "years old")  // => Bobby is: 3 years old
+	fmt.Println("Bobby is:", dog.age, "years old") // => Bobby is: 3 years old
 
 	// we can equally use the new keyword to create a new instance of Animal
 
@@ -31,5 +31,4 @@ func main() {
 
 	fmt.Println(cat.name, "is", cat.age, "Years old")
 
-	
 }

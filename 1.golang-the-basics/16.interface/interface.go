@@ -9,22 +9,22 @@ import (
 
 // Let's createva basic interface for geometric shapes.
 
-type geometry interface{
+type geometry interface {
 	area() float64
 	perimeter() float64
 }
 
 // For our example we’ll implement this interface on rect and circle types.
 
-type rect struct{
+type rect struct {
 	length, width float64
 }
 
-type circle struct{
+type circle struct {
 	radius float64
 }
 
-// To implement an interface, we just need to implement all the methods in the interface. 
+// To implement an interface, we just need to implement all the methods in the interface.
 // Here we implement geometry on rects.
 
 func (r rect) area() float64 {
@@ -32,7 +32,7 @@ func (r rect) area() float64 {
 }
 
 func (r rect) perimeter() float64 {
-	return 2 * r.length + r.width
+	return 2*r.length + r.width
 }
 
 // And here we implement geometry on circle

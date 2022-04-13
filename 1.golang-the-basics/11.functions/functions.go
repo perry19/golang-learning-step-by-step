@@ -81,5 +81,3 @@ func f() func() int {
 		return x
 	}
 }
-
-

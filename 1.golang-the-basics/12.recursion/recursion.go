@@ -24,8 +24,8 @@ func fact(n int) int {
 // F(n) = F(n - 1) + F(n - 2), for n > 1.
 // Given n, calculate F(n).
 func fib(n int) int {
-    if n < 2 {
-        return n
-    }
-    return fib(n - 1) + fib(n - 2)
+	if n < 2 {
+		return n
+	}
+	return fib(n-1) + fib(n-2)
 }
