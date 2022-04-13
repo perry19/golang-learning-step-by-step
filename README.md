@@ -8,8 +8,8 @@ This repository contains a documentation of my golang learning journey. I freque
 
 Below are the resources I'm currently using to learn 
 
-<ul>
-  <li> [gobyexample](https://gobyexample.com/ 'Learn go by example') </li>
-  <li> [golangdocs](https://golangdocs.com/ 'To read more on certain concepts') </li>
-  <li> [go official website](https://go.dev/ 'To go in depth on certain concepts') </li>
-</ul>
+- [gobyexample](https://gobyexample.com/ 'Learn go by example')
+
+- [golangdocs](https://golangdocs.com/ 'To read more on certain concepts')
+
+- [go official website](https://go.dev/ 'To go in depth on certain concepts')
