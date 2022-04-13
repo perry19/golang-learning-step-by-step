@@ -13,3 +13,7 @@ Below are the resources I'm currently using to learn
 - [golangdocs](https://golangdocs.com/ 'To read more on certain concepts')
 
 - [go official website](https://go.dev/ 'To go in depth on certain concepts')
+
+If you are interested in a golang cheat sheet I highly recommend:
+
+- [this quick reference](https://quickref.me/golang 'Quick ref')
