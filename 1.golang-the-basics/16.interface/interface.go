@@ -7,7 +7,7 @@ import (
 
 // Interfaces are named collections of method signatures.
 
-// Let's createva basic interface for geometric shapes.
+// Let's create a basic interface for geometric shapes.
 
 type geometry interface {
 	area() float64
