@@ -26,12 +26,13 @@ func main() {
 
 // Instead of using any, which is not comparable. we can use type set
 // as shown below, to declare all the types our generic can accepts in an interface
-type minTypes interface{
-	~float64 | int
+// We could still pass the types directly, but for the sake of reusability we put them in an interface
+type maxTypes interface{
+	float64 | int
 }
 
 // In our function T is a generic type which can accept int and float 64
-func max[T minTypes](a T, b T) T {
+func max[T maxTypes](a T, b T) T {
 	if a > b {
 		return a
 	}
