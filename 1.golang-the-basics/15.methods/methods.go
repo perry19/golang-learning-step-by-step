@@ -28,7 +28,7 @@ type Rect struct {
 }
 
 // Here is the syntax for a method.
-// func (receiver type) method()  {
+// func (receiver type) method() returnType {
 
 // }
 // This calculateArea method has a receiver type of Rect.
