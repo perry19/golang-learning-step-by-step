@@ -36,18 +36,18 @@ func main() {
 	// here the embedded type serves as the field name.
 
 	p := Parent{
-        Child: Child{
-            name: "Mary",
-			age: 3,
-        },
-        married: true,
-    }
+		Child: Child{
+			name: "Mary",
+			age:  3,
+		},
+		married: true,
+	}
 	// We can access the child’s fields directly on p, e.g. p.age
 	fmt.Println("My child is", p.age, "years old")
 
 	// Alternatively, we can spell out the full path using the embedded type name.
 	fmt.Println("My child's name is", p.Child.name)
-	
+
 	// Since parent embeds child, the methods of child also become methods of parent.
 	// Here we invoke a method that was embedded from child directly on p.
 
@@ -56,12 +56,12 @@ func main() {
 	// Since parent embeds child, the methods of child also become methods of parent.
 	// Here we invoke a method that was embedded from child directly on p.
 
-	// Notice that child already implements 
+	// Notice that child already implements
 	// the method sayHello() in the greeter interface
 	type greeter interface {
 		sayHello() string
 	}
 
 	var g greeter = p
-    fmt.Println("Greet:", g.sayHello())
+	fmt.Println("Greet:", g.sayHello())
 }

@@ -26,7 +26,7 @@ func main() {
 	// here we remove the 1st student (Jacob) by specifying the map(student) and the id (key)
 	// as parameters to the delete function
 
-	delete(students, 1) 
+	delete(students, 1)
 	fmt.Println("The new students map is:", students) // => The new students map is: map[2:Ralph 3:Perry]
 
 	// Here we are trying to print a student that does not exist (student with id = 1)
