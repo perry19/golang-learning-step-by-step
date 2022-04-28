@@ -7,7 +7,9 @@ func main() {
 	// Therefore we can say a slice is an array without a fix size
 	// This is how you declare a slice, just like an array: var aslice []string
 	// or using the make function
-
+	// When a slice is created it equally creates an underlying array...
+	// In such cases the length and capacity of the slice are thesame
+	
 	// basic slice
 
 	var mySlice = []int{1, 2, 3, 4, 5}
