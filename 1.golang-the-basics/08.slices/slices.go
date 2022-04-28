@@ -30,6 +30,8 @@ func main() {
 	fmt.Println(yourSlice) // => [Martin Job   ]
 
 	// Use len() as with arrays to get the length of the slice
+	// Use cap() to get the capacity of the slice: 
+	// basically the capacity is the length of it underlying array 
 	fmt.Println("Slice Length:", len(yourSlice))
 
 	// slices support several more that make them richer than arrays. One is the builtin append
