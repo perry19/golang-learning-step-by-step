@@ -5,10 +5,12 @@ import "fmt"
 func main() {
 	// Slices are resizable arrays, and provide great flexibility
 	// Therefore we can say a slice is an array without a fix size
-	// This is how you declare a slice, just like an array: var aslice []string
-	// or using the make function
 	// When a slice is created it equally creates an underlying array...
 	// In such cases the length and capacity of the slice are thesame
+	// If the backing array of a slice is too small to fit all the given values,
+	// a bigger array will be allocated, this is why we say slices grow as needed
+	// Just like an array to declare a slice you say: var slice_name []string
+	// or using the make function
 	
 	// basic slice
 
