@@ -7,9 +7,9 @@ import (
 
 // A goroutine is a light-weight thread managed by the go runtime
 
-// before talking of goroutines let's understand what is concurrency and parallelism
+// before talking of goroutines it will be good to understand what is concurrency and parallelism
 
-// In laymen term concurrency is the
+// To invoke a go routine use the go keyword followed by the function e.g go f(s)
 
 func sayHi(name string) string {
 	return "Hello " + name
@@ -24,4 +24,3 @@ func main() {
 
 	fmt.Println("Done!")
 }
-
