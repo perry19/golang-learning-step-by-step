@@ -9,15 +9,18 @@ import (
 	"sync"
 )
 
+// The goal of this activity is to explore the use of threads by creating a program for
+// sorting integers that uses four goroutines to create four sub-arrays and then merge
+// the arrays into a single array.
 func main() {
 
-    fmt.Println("Enter a series of space seperated integer: ")
+	fmt.Println("Enter a series of space seperated integer: ")
 
-    scanner := bufio.NewScanner(os.Stdin)
+	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	userInput := scanner.Text()
 
-	var n []int  
+	var n []int
 
 	for _, token := range strings.Split(userInput, " ") {
 		number, _ := strconv.Atoi(token)
@@ -30,7 +33,6 @@ func main() {
 	splittedArray := splitArray(n, 4)
 
 	var wg sync.WaitGroup
-
 
 	wg.Add(4)
 	go func() {
@@ -89,7 +91,6 @@ func splitArray(array []int, numberOfChunks int) [][]int {
 
 	result := make([][]int, numberOfChunks)
 
-	// we have more splits than elements in the input array.
 	if numberOfChunks > len(array) {
 		for i := 0; i < len(array); i++ {
 			result[i] = []int{array[i]}
